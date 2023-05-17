@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Roboto+Slab&family=Roboto:ital,wght@0,100;1,500&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +7,261 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  /* font-family: 'Mulish'; */
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Roboto Slab', serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ---navbar */
+.navbar {
+  background-color: #fff;
+  /* background-color: red !important; */
+}
+
+.navbar-brand {
+  font-size: 1.9rem !important;
+  color: #565387 !important;
+}
+
+#nav {
+  border: none;
+}
+
+.logo {
+  height: 70px;
+  width: 60px;
+  /* border-radius: 50px; */
+}
+
+.navbar a {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+}
+
+.active {
+  font-weight: bold;
+  border-bottom: 1px solid #565387;
+}
+
+.navbar a:hover {
+  color: #3498db !important;
+}
+
+
+/* --home */
+#header {
+  width: 100%;
+  height: 80vh;
+  margin-top: 30px;
+}
+
+#header h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+}
+
+#header .brand-name {
+  color: #3498db;
+}
+
+#header h2 {
+  color: #484848;
+  font-size: 24px;
+}
+
+#header .btn-get-started {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #3498db;
+  border: 2px solid #3498db;
+  text-decoration: none;
+}
+
+#header .btn-get-started:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.header-img {
+  text-align: right;
+}
+
+#header .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  width: 500px;
+  height: 350px;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+
+/* --service */
+.card_img {
+  height: 200px;
+}
+
+.contact_div {
+  width: 100%;
+  height: 75vh;
+}
+
+
+/* --footer */
+/* footer {
+   display: flex;
+  align-items: center;
+  justify-content: center; 
+  position: fixed;
+  bottom: 0; 
+   margin-bottom: 1rem; 
+   background-color: white; 
+}  */
+
+
+footer p {
+  padding: 0;
+  margin: 0;
+}
+
+
+/* --responsive code */
+@media (max-width:991px) {
+  #header {
+    /* height: 80vh; */
+    text-align: center;
+  }
+
+  #header .header-img {
+    text-align: center;
+  }
+
+  #header .header-img img {
+    width: 60%;
+  }
+}
+
+@media (max-width : 997px) {
+  .navbar-brand {
+    font-size: 1.5rem !important;
+  }
+
+  .active {
+    font-weight: bold;
+    border-bottom: none;
+  }
+}
+
+
+@media (max-width :768px) {
+  #header {
+    margin-top: 20px;
+  }
+
+  #header h1 {
+    font-size: 28px;
+  }
+
+  #header h2 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  #header .header-img img {
+    width: 70%;
+  }
+}
+
+@media (max-width:995px) {
+  #header {
+    margin-bottom: 20rem;
+  }
+}
+
+@media (max-width:795px) {
+  #header {
+    margin-bottom: 15rem;
+  }
+}
+
+
+@media (max-width:760px) {
+  #header {
+    margin-bottom: 9rem;
+  }
+}
+
+@media (max-width:980px) {
+  footer {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width:990px) {
+  .animated {
+    margin-top: 300px;
+  }
+}
+
+@media (max-width:795px) {
+  .animated {
+    margin-top: 100px !important;
+  }
+}
+
+
+@media (max-width:519px) {
+  footer {
+    margin-top: 60px;
+  }
+}
+
+
+@media (max-width:370px) {
+  footer {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width:340px) {
+  footer {
+    margin-top: 80px;
+  }
 }
